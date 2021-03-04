@@ -14,23 +14,8 @@ In the first part of this exercise, we'll build a logistic regression model to p
 - Scatter plot of the two scores and use color coding to visualize if the example is positive (admitted) or negative (not admitted).
 - Implement the sigmoid function and test it (by plotting it ) using generated data
 - Write the cost function that takes (X,y,theta) as entries
-- Run this the following code. You have the name your dataframe as "data". Check the shapes of X,y and theta
-
-```
-data.insert(0, 'Ones', 1)
-# set X  and y (for training) 
-cols = data.shape[1]
-X = data.iloc[:,0:cols-1]
-y = data.iloc[:,cols-1:cols]
-# convert to numpy arrays
-X = np.array(X.values)
-y = np.array(y.values)
-# initlize the parameter array theta
-theta = np.zeros(3)
-```
-
-
-
+- Extract your dataset (to be used in ML) and labels from the dataframe and name them (X, y).
+- Initialize your parameter vector theta as a zero np.array of size 3 
 - Compute the initial cost (with initial values of theta) 
 - Copy the function below in your code. It computes the gradient during the optimization process
 ```
@@ -46,11 +31,12 @@ def gradient(theta, X, y):
         grad[i] = np.sum(term) / len(X)
     return grad
 ```
-
-  
-    
- - Use the function `fmin_tnc` from `scipy.optimize` to find the optimal parameters
- - Write a prediction function that takes an input vector **x** and outputs its class y
+ - Call the function gradient with the initial values of `theta`
+ - Use the function `fmin_tnc` from `scipy.optimize` to find the optimal parameters `theta_opt`
+ - Write a prediction function that takes an input vector `**x**` and outputs its class `y`
+ - Write a function that estimate the accuracy of your model by a Kfold cross validation
+ - Compute the confusion matrix of your model
+ - Use the built in function `sklearn.linear_model.LogisticRegression` and estimate the accuracy of your model using LOOCV (leave one out cross validation)
 
 
 https://members.loria.fr/FSur/enseignement/apprauto/
