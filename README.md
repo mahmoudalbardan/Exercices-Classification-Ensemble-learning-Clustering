@@ -4,13 +4,13 @@
 The challenge
 -------------
 
-In this exercise we'll implement logistic regression and apply it to a classification task. We'll also improve the robustness of our implementation by adding regularization to the training algorithm. and testing it on a more difficult problem.
+In this exercise we'll implement logistic regression and apply it to a classification task. 
 
 Logistic regression
-In the first part of this exercise, we'll build a logistic regression model to predict whether a student gets admitted to a university. Suppose that you are the administrator of a university department and you want to determine each applicant's chance of admission based on their results on two exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant's scores on two exams and the admissions decision. To accomplish this, we're going to build a classification model that estimates the probability of admission based on the exam scores.
+In the first part of this exercise, we'll build a logistic regression model to predict whether a student gets admitted to a university. You want to determine each applicant's chance of admission based on their results on two exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant's scores on two exams and the admissions decision. To accomplish this, we're going to build a classification model that estimates the probability of admission based on the exam scores.
 
 
-- Load the data, examin it using pandas methods 
+- Load the data, examin it using pandas methods (check if there are missing values!)
 - Scatter plot of the two scores and use color coding to visualize if the example is positive (admitted) or negative (not admitted).
 - Implement the sigmoid function and test it (by plotting it ) using generated data
 - Write the cost function that takes (X,y,theta) as entries
@@ -36,7 +36,5 @@ def gradient(theta, X, y):
  - Write a prediction function that takes an input vector `**x**` and outputs its class `y`
  - Write a function that estimate the accuracy of your model by a Kfold cross validation
  - Compute the confusion matrix of your model
- - Use the built in function `sklearn.linear_model.LogisticRegression` and estimate the accuracy of your model using LOOCV (leave one out cross validation)
+ - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and stimate the accuracy of your models using LOOCV (leave one out cross validation)
 
-
-https://members.loria.fr/FSur/enseignement/apprauto/
