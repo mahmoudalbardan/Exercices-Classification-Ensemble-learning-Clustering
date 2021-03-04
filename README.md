@@ -18,21 +18,13 @@ In the first part of this exercise, we'll build a logistic regression model to p
 
 ```
 data.insert(0, 'Ones', 1)
-
 # set X  and y (for training) 
-
 cols = data.shape[1]
-
 X = data.iloc[:,0:cols-1]
-
 y = data.iloc[:,cols-1:cols]
-
 # convert to numpy arrays
-
 X = np.array(X.values)
-
 y = np.array(y.values)
-
 # initlize the parameter array theta
 theta = np.zeros(3)
 ```
