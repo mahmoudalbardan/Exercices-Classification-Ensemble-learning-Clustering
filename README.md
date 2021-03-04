@@ -16,7 +16,7 @@ In the first part of this exercise, we'll build a logistic regression model to p
 - Write the cost function that takes (X,y,theta) as entries
 - Run this the following code. You have the name your dataframe as "data". Check the shapes of X,y and theta
 
-`data.insert(0, 'Ones', 1)
+```data.insert(0, 'Ones', 1)
 
 # set X  and y (for training) 
 
@@ -33,7 +33,7 @@ X = np.array(X.values)
 y = np.array(y.values)
 
 # initlize the parameter array theta
-theta = np.zeros(3)`
+theta = np.zeros(3)```
 
 
 - Compute the initial cost (with initial values of theta) 
