@@ -16,20 +16,18 @@ In the first part of this exercise, we'll build a logistic regression model to p
 - Write the cost function that takes (X,y,theta) as entries
 - Run this the following code. You have the name your dataframe as "data". Check the shapes of X,y and theta
 
-`
-data.insert(0, 'Ones', 1)
+`data.insert(0, 'Ones', 1)
 # set X  and y (for training) 
 cols = data.shape[1]
 X = data.iloc[:,0:cols-1]
 y = data.iloc[:,cols-1:cols]
-
 # convert to numpy arrays and 
 X = np.array(X.values)
 y = np.array(y.values)
+# initlize the parameter array theta
+theta = np.zeros(3)`
 
-# initalize the parameter array theta
-theta = np.zeros(3)
-`
+
 - Compute the initial cost (with initial values of theta) 
 
 `# function to compute the gradient during the optimization process
@@ -37,15 +35,12 @@ def gradient(theta, X, y):
     theta = np.matrix(theta)
     X = np.matrix(X)
     y = np.matrix(y)
- 
     parameters = int(theta.ravel().shape[1])
     grad = np.zeros(parameters)
     error = sigmoid(X * theta.T) - y
-    
     for i in range(parameters):
         term = np.multiply(error, X[:,i])
         grad[i] = np.sum(term) / len(X)
-    
     return grad `
   
     
