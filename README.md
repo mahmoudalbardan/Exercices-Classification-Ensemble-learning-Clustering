@@ -32,9 +32,8 @@ theta = np.zeros(3)
 
 
 - Compute the initial cost (with initial values of theta) 
-
+- Copy the function below in your code. It computes the gradient during the optimization process
 ```
-# function to compute the gradient during the optimization process
 def gradient(theta, X, y):
     theta = np.matrix(theta)
     X = np.matrix(X)
@@ -50,7 +49,8 @@ def gradient(theta, X, y):
 
   
     
- - Use the function 
+ - Use the function `fmin_tnc` from `scipy.optimize` to find the optimal parameters
+ - Write a prediction function that takes an input vector **x** and outputs its class y
 
 
 https://members.loria.fr/FSur/enseignement/apprauto/
