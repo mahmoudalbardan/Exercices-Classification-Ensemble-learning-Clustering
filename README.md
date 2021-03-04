@@ -10,8 +10,10 @@ Logistic regression
 In the first part of this exercise, we'll build a logistic regression model to predict whether an administration employee gets promoted. You want to determine each applicant's chance of promotion based on their results on two domain-related exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant's scores on two exams and the promotion decision. To accomplish this, we're going to build a classification model that estimates the probability of admission based on the exam scores.
 
 
-- Load the data, examin it using pandas methods (check if there are missing values!)
-- Scatter plot of the two scores and use color coding to visualize if the example is positive (admitted) or negative (not admitted).
+- Load the data, examin it using pandas methods, check your variable types and convert categorical variables to numerical 
+- Scale your dataset using `MinMaxScaler` from `sklearn.preprocessing`
+- Scatter plot of the two scores and use color coding to visualize if the example is positive (admitted) or negative (not admitted)
+- Scatter plot of the two scores and use color coding to visualize if the example is male or female 
 - Implement the sigmoid function and test it (by plotting it ) using generated data
 - Write the cost function that takes (X,y,theta) as entries
 - Extract your dataset (to be used in ML) and labels from the dataframe and name them (X, y).
