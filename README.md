@@ -7,7 +7,7 @@ The challenge
 In this exercise we'll implement logistic regression and apply it to a classification task. 
 
 Logistic regression
-In the first part of this exercise, we'll build a logistic regression model to predict whether a student gets admitted to a university. You want to determine each applicant's chance of admission based on their results on two exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant's scores on two exams and the admissions decision. To accomplish this, we're going to build a classification model that estimates the probability of admission based on the exam scores.
+In the first part of this exercise, we'll build a logistic regression model to predict whether an administration employee gets promoted. You want to determine each applicant's chance of promotion based on their results on two domain-related exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant's scores on two exams and the promotion decision. To accomplish this, we're going to build a classification model that estimates the probability of admission based on the exam scores.
 
 
 - Load the data, examin it using pandas methods (check if there are missing values!)
