@@ -9,7 +9,7 @@ In this exercise we'll implement logistic regression and apply it to a classific
 In the first part of this exercise, we'll build a logistic regression model to predict whether an administration employee will get promoted or not. You have to determine each employee's chance of promotion based on their results on two domain-related exams, age and sex. You have historical data from previous applicants that you can use as a training set for logistic regression. To accomplish this, we're going to build a classification model that estimates the probability of admission based on the exam scores.
 
 
-- Load the data from [here](https://drive.google.com/file/d/1rgA6H7OPdSaaRR1B6Ifs_7shH7o40WqB/view?usp=sharing), examin it using pandas methods, check your variable types and convert categorical variables to numerical 
+- Load the data from [here](https://drive.google.com/file/d/1vIqw8_A2Zx_Qw3QNAmIApFFh-7MPnkdB/view?usp=sharing), examin it using pandas methods, check your variable types and convert categorical variables to numerical 
 - Scale your dataset using `MinMaxScaler` from `sklearn.preprocessing`
 - Scatter plot of the two scores and use color coding to visualize if the example is positive (promotted) or negative (not promotted)
 - Scatter plot of the two scores and use color coding to visualize if the example is male or female 
