@@ -1,5 +1,6 @@
 # TD-2-3
 
+**NOTE: FROM NOW ON, YOU HAVE TO SAVE YOUR CODE. YOU WILL USE IT LATER IN OTHER SESSIONS.**
 
 The challenge
 -------------
@@ -15,7 +16,7 @@ In the first part of this exercise, we'll build a logistic regression model to p
 - Implement the sigmoid function and test it (by plotting it ) using generated data
 - Write the cost function that takes (X,y,theta) as entries
 - Extract your dataset (to be used in ML) and labels from the dataframe and name them (X, y).
-- Initialize your parameter vector theta as a zero np.array of size 3 
+- Initialize your parameter vector theta as a zero np.array of size 5 (=dimension of your data + 1 (bias))
 - Compute the initial cost (with initial values of theta) 
 - Copy the function below in your code. It computes the gradient during the optimization process
 ```
@@ -37,4 +38,3 @@ def gradient(theta, X, y):
  - Write a function that estimate the accuracy of your model by a Kfold cross validation
  - Compute the confusion matrix of your model
  - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and stimate the accuracy of your models using LOOCV (leave one out cross validation)
-
