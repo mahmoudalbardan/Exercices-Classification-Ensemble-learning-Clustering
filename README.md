@@ -37,7 +37,7 @@ def gradient(theta, X, y):
  - Write a prediction function that takes an input vector `**x**` and outputs its class `y`
  - Write a function that estimate the accuracy of your model by a Kfold cross validation
  - Compute the confusion matrix of your model
- - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and stimate the accuracy of your models using LOOCV (leave one out cross validation)
+ - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and estimate the accuracy of your models using LOOCV (leave one out cross validation)
 
 
 
