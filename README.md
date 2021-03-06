@@ -45,7 +45,7 @@ def gradient(theta, X, y):
  - Build a stacking algorithm using **(LogReg+ DT + NB)** ( 50% of the data for D_train, 25% to construct the D_valid and 25 for D_test) (let's call it *Alg3*)
  - Use the built in functon `sklearn.ensemble.AdaBoostClassifier` and evalute the accracy of this model (use 50 estimators of Decision Trees) (let's call it *Alg4*)
  - Calculate the area under the curve AUC for *Alg1*,*Alg2*,*Alg3* and *Alg4*. Which one has the best performance?
- - 
+ 
 
 
 
