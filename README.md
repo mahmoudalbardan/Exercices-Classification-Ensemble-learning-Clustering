@@ -40,11 +40,12 @@ def gradient(theta, X, y):
  - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and `sklearn.naive_bayes.GaussianNB`
  and estimate the accuracy of your models using LOOCV (leave one out cross validation)
  - Use a majority voting to aggregate the predictions **(LogReg+ DT + NB)** and estimate the accuracy of the new meta classifier 
- - Build a Bagging algorithm with `decision trees` as base estimator with 50 estimators, Does the accuracy changes?
- - Build a Random subspaces algorithm with `decision trees` as base estimator with 10 estimator, does the accuracy changes?
- - Build a stacking algorithm using **(LogReg+ DT + NB)** ( 50% of the data for D_train, 25% to construct the D_valid and 25 for D_test)
- - Use the built in functon `sklearn.ensemble.AdaBoostClassifier` and evalute the accracy of this model (use 50 estimators of Decision Trees) 
-
+ - Build a Bagging algorithm with `decision trees` as base estimator with 50 estimators, Does the accuracy changes? (let's call it *Alg1*)
+ - Build a Random subspaces algorithm with `decision trees` as base estimator with 10 estimator (*Alg2*) , does the accuracy changes?
+ - Build a stacking algorithm using **(LogReg+ DT + NB)** ( 50% of the data for D_train, 25% to construct the D_valid and 25 for D_test) (let's call it *Alg3*)
+ - Use the built in functon `sklearn.ensemble.AdaBoostClassifier` and evalute the accracy of this model (use 50 estimators of Decision Trees) (let's call it *Alg4*)
+ - Calculate the area under the curve AUC for *Alg1*,*Alg2*,*Alg3* and *Alg4*. Which one has the best performance?
+ - 
 
 
 
