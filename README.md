@@ -55,7 +55,7 @@ COURS
 -----
 - [Lecture notes for classification algorithms](https://drive.google.com/file/d/1oGU6CuWIe4UZIFJQti2TFYjH-7kBws8O/view?usp=sharing)
 - [John Klein web page](https://john-klein.github.io/)
-- Very good tutorials on youtube for Hugo LaRochelle
+- Very good tutorials in [Hugo LaRochelle youtube page](https://www.youtube.com/user/hugolarochelle)
 
 For more details, you can check the first chapter of my [PhD thesis](https://drive.google.com/file/d/1QMci-0gAHPBeMn9L-2pRpbLeXROw5A8I/view?usp=sharing)
 
