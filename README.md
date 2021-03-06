@@ -36,8 +36,14 @@ def gradient(theta, X, y):
  - Use the function `fmin_tnc` from `scipy.optimize` to find the optimal parameters `theta_opt`
  - Write a prediction function that takes an input vector `**x**` and outputs its class `y`
  - Write a function that estimate the accuracy of your model by a Kfold cross validation
- - Compute the confusion matrix of your model
- - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and estimate the accuracy of your models using LOOCV (leave one out cross validation)
+ - Compute the confusion matrix of your model, precision, recall and F-score
+ - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and `sklearn.naive_bayes.GaussianNB`
+ and estimate the accuracy of your models using LOOCV (leave one out cross validation)
+ - Use a majority voting to aggregate the predictions **(LogReg+ DT + NB)** and estimate the accuracy of the new meta classifier 
+ - Build a Bagging algorithm with `decision trees` as base estimator with 50 estimators, Does the accuracy changes?
+ - Build a Random subspaces algorithm with `decision trees` as base estimator with 10 estimator, does the accuracy changes?
+ - Build a stacking algorithm using **(LogReg+ DT + NB)** ( 50% of the data for D_train, 25% to construct the D_valid and 25 for D_test)
+ - Use the built in functon `sklearn.ensemble.AdaBoostClassifier` and evalute the accracy of this model (use 50 estimators of Decision Trees) 
 
 
 
@@ -47,4 +53,5 @@ def gradient(theta, X, y):
 
 COURS
 -----
-[Lecture notes](https://drive.google.com/file/d/1oGU6CuWIe4UZIFJQti2TFYjH-7kBws8O/view?usp=sharing)
+- [Lecture notes for classification algorithms](https://drive.google.com/file/d/1oGU6CuWIe4UZIFJQti2TFYjH-7kBws8O/view?usp=sharing)
+- Check [John Klein](https://john-klein.github.io/)
