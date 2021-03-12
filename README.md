@@ -48,7 +48,8 @@ def gradient(theta, X, y):
  - Only using the Bagging algorithm, perform a 10 folds cross validation and plot the validation error across the folds
  - We added two additional columns (salary and experience). Perform a feature selection and choose the best 3 features for the classification using 
  Recursive feature elimination `sklearn.feature_selection.RFE`. You are free in the choice of the estimator. 
- We recommand the usage of Knn with k=sqrt(n) where n is the number of employees (here 100). Since we have two classes, it is prefarable to have an odd value of k=sqrt(n)+1
+ We recommand the usage of Knn with k=sqrt(n) where n is the number of employees (here 100). Since we have two classes, it is prefarable to have an odd value of k=sqrt(n)+1.
+ You need to download the dataset from the link above, to handle categorical variables and to scale your data again using MinMaxScaler.
  
 
 
