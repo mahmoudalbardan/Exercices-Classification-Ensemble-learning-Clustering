@@ -38,13 +38,17 @@ def gradient(theta, X, y):
  - Write a function that estimate the accuracy of your model by a Kfold cross validation
  - Compute the confusion matrix of your model, precision, recall and F-score
  - Use the built in function `sklearn.linear_model.LogisticRegression`, `sklearn.tree.DecisionTreeClassifier` and `sklearn.naive_bayes.GaussianNB`
- and estimate the accuracy of your models using LOOCV (leave one out cross validation)
+ and estimate the accuracy of your models using LOOCV (leave one out cross validation: check `sklearn.model_selection.LeaveOneOut`)
  - Use a majority voting to aggregate the predictions **(LogReg+ DT + NB)** and estimate the accuracy of the new meta classifier 
- - Build a Bagging algorithm with `decision trees` as base estimator with 50 estimators, Does the accuracy changes? (let's call it *Alg1*)
+ - Build a Bagging algorithm with `decision trees` as base estimator with 50 estimators, Does its accuracy changes w.r.t the accuracy calculated using `sklearn.tree.DecisionTreeClassifier`? (let's call it *Alg1*)
  - Build a Random subspaces algorithm with `decision trees` as base estimator with 10 estimator (*Alg2*) , does the accuracy changes?
  - Build a stacking algorithm using **(LogReg+ DT + NB)** ( 50% of the data for D_train, 25% to construct the D_valid and 25 for D_test) (let's call it *Alg3*)
  - Use the built in functon `sklearn.ensemble.AdaBoostClassifier` and evalute the accracy of this model (use 50 estimators of Decision Trees) (let's call it *Alg4*)
  - Calculate the area under the curve AUC for *Alg1*,*Alg2*,*Alg3* and *Alg4*. Which one has the best performance?
+ - Only using the Bagging algorithm, perform a 10 folds cross validation and plot the validation error across the folds
+ - We added two additional columns (salary and experience). Perform a feature selection and choose the best 3 features for the classification using 
+ Recursive feature elimination `sklearn.feature_selection.RFE`. You are free in the choice of the estimator. 
+ We recommand the usage of Knn with k=sqrt(n) where n is the number of employees (here 100). Since we have two classes, it is prefarable to have an odd value of k=sqrt(n)+1
  
 
 
