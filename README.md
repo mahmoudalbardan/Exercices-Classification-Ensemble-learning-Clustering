@@ -1,4 +1,4 @@
-# TD-2-3-4
+# TD-2-3-4-5
 
 **NOTE: FROM NOW ON, YOU HAVE TO SAVE YOUR CODE. YOU WILL USE IT LATER IN OTHER SESSIONS.**
 
@@ -50,9 +50,17 @@ def gradient(theta, X, y):
  Recursive feature elimination `sklearn.feature_selection.RFE`. You are free in the choice of the estimator. 
  We recommand the usage of Knn with k=sqrt(n) where n is the number of employees (here 100). Since we have two classes, it is prefarable to have an odd value of k=sqrt(n)+1.
  You need to download the dataset from the link above, to handle categorical variables and to scale your data again using MinMaxScaler.
- - Perform another types of feature selection techniques from `sklearn.feature_selection`. 
- - Evaluate each method using the following metrics: Accuracy, Precision, Recall and plot those metrics along 10 folds cv. 
- -
+ - Perform another types of feature selection techniques from `sklearn.feature_selection` 
+ - Give the definition of the following metrics: Accuracy, Precision, Recall
+ - Evaluate each method using the previous metrics and plot those metrics of 10 folds cv 
+
+
+ Clustering is a Machine Learning technique that involves the grouping of data points. Given a set of data points, we can use a clustering algorithm to classify each data point into a specific group. In theory, data points that are in the same group should have similar properties and/or features, while data points in different groups should have highly dissimilar properties and/or features. Clustering is a method of unsupervised learning and is a common technique for statistical data analysis used in many fields.
+ 
+ - Perform Kmeans clustering on the dataset using only two features (scores of the first and second exams) using `fit_predict` function of kmeans
+ - Try multiple values of k. For each value of k, for each cluster, plot the histogram of the Age, Sex and Salary. Inspect cluster centers using the `cluster_centers_` attribute of kmeans algorithm.
+ - For each value of k, compute the silhouette score to evaluate your clustering algorithm `sklearn.metrics.silhouette_score`. Plot the silhouette scores for each value of k
+ and choose the alue of k that achieves the best clustering (hint: it is the value that maximizes the silhouette score)
 
 
 
