@@ -50,9 +50,9 @@ def gradient(theta, X, y):
  Recursive feature elimination `sklearn.feature_selection.RFE`. You are free in the choice of the estimator. 
  We recommand the usage of Knn with k=sqrt(n) where n is the number of employees (here 100). Since we have two classes, it is prefarable to have an odd value of k=sqrt(n)+1.
  You need to download the dataset from the link above, to handle categorical variables and to scale your data again using MinMaxScaler.
- 
-
-
+ - Perform another types of feature selection techniques from `sklearn.feature_selection`. 
+ - Evaluate each method using the following metrics: Accuracy, Precision, Recall and plot those metrics along 10 folds cv. 
+ -
 
 
 
