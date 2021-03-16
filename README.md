@@ -60,9 +60,7 @@ def gradient(theta, X, y):
  - Try multiple values of k. For each value of k, for each cluster, plot the histogram of the Age, Sex and Salary. Inspect cluster centers using the `cluster_centers_` attribute of kmeans algorithm.
  - For each value of k, compute the silhouette score to evaluate your clustering algorithm `sklearn.metrics.silhouette_score`. Plot the silhouette scores for each value of k
  and choose the alue of k that achieves the best clustering (hint: it is the value that maximizes the silhouette score)
-
-
-
+- Use the DBSCAN algorithm, modify the paramters eps and min samples and compute the silhouette scores of each
 
 COURS
 -----
