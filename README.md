@@ -59,7 +59,7 @@ def gradient(theta, X, y):
  - Perform Kmeans clustering on the dataset using only two features (scores of the first and second exams) using `fit_predict` function of kmeans
  - Try multiple values of k. For each value of k, for each cluster, plot the histogram of the Age, Sex and Salary. Inspect cluster centers using the `cluster_centers_` attribute of kmeans algorithm.
  - For each value of k, compute the silhouette score to evaluate your clustering algorithm `sklearn.metrics.silhouette_score`. Plot the silhouette scores for each value of k
- and choose the alue of k that achieves the best clustering (hint: it is the value that maximizes the silhouette score)
+ and choose the value of k that achieves the best clustering (hint: it is the value that maximizes the silhouette score)
 
 COURS
 -----
